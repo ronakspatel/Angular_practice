@@ -1,0 +1,36 @@
+<div>
+    <h1>{{'FullName: '+getFullName()}}</h1>
+    <h1>{{10+15+25}}</h1>
+
+    <h1>{{pageHeader ? pageHeader : 'No Header'}}</h1>
+    <img src='{{imagePath}}' />
+</div>
+<button [disabled]='isDisabled'>Property_binding</button>
+<button disabled='{{isDisabled}}'>Interpolation</button>
+
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">EmpDetail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>FirstName</td>
+            <td>{{firstName}}</td>
+        </tr>
+        <tr>
+            <td>LastName</td>
+            <td>{{lastName}}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{gender}}</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>{{age}}</td>
+        </tr>
+    </tbody>
+</table>

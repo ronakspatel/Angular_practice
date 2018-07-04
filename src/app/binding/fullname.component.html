@@ -1,0 +1,58 @@
+<table>
+    
+    <tr>
+        <td>
+            Fname:
+        </td>
+        <td>
+            <input type="text" name="fname" [(ngModel)]="fname">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Lname:
+        </td>
+        <td>
+            <input type="text" name="Lname" [(ngModel)]="lname" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            
+        </td>
+        <td>
+            <input type="button" name="Submit" (click)="onclick()" value="Submit">
+            <input type="button" name="Reset" (click)="onclick1()" value="Reset">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Fullname:
+        </td>
+        <td>
+            <input type="text" name="Fullname" [value]="fullname">
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+            <input type="text" name="one" [(ngModel)]="one" id="">
+        </td>
+        <td>
+            <select name="operation" [(ngModel)]="operation" id="">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" name="second" [(ngModel)]="second" id="">
+        </td>
+        <td>=</td>
+        <td>
+            <input type="text" name="result" value="{{result}}" id="">
+        </td>
+    </tr>
+</table>

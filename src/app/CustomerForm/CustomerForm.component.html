@@ -1,0 +1,54 @@
+<table>
+    <tr>
+        <td> F_Name :</td>
+        <td><input type="text" name="Fname" value="{{fname}}" placeholder="Enter FirstName"></td>
+    </tr>
+
+    <tr>
+        <td> L_Name :</td>
+        <td><input type="text" name="Lname" value="{{lname}}"></td>
+    </tr>
+
+    <tr>
+        <td> Age :</td>
+        <td> <input type="number" name="Age" value="{{age}}">
+        </td>
+    </tr>
+
+    <tr>
+        <td> Mo_Number :</td>
+        <td>
+            <input type="number" name="monumber" value="{{monumber}}">
+        </td>
+    </tr>
+
+    <tr>
+        <td> Gender:</td>
+        <td>
+                <input type="radio" (change)="onChangeGenderRadio($event.target.value)" name="Gender" value="male" checked>Male</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td> 
+                <input type="radio" (change)="onChangeGenderRadio($event.target.value)"  name="Gender" value="female">Female</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+                <input type="radio" (change)="onChangeGenderRadio($event.target.value)" name="Gender" value="other" >Other </td>
+    </tr>
+<tr *ngIf="isStatus">
+    <td>Other Text </td>
+    <td>
+
+        <input type="text" name="otherText">
+    </td>
+</tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" name="Submit" value="Submit">
+        </td>
+    </tr>
+</table>
+

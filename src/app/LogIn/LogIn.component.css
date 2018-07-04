@@ -1,0 +1,16 @@
+table {
+    border: black 1pc;
+    
+    width: 100%;
+    background-color: burlywood;
+}
+
+th {
+    height: 50px;
+    background-color: cornsilk;
+}
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+

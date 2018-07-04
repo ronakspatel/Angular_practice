@@ -1,0 +1,31 @@
+<table>
+
+    <tr>
+        <th>Css Binding</th>
+        <td>
+            <button class="colorClass button" [class]='classesToApply'>My Button</button>
+        </td>
+        <td>
+            <button class ="colorClass italicsClass boldClass button" [class.boldClass]="applyBoldClass">My Button</button>
+        </td>
+        <td>
+            <button class=" button" [ngClass]="addClasses()">My Button</button>
+        </td>
+    </tr>
+    <tr>
+        <th>Style Binding</th>
+        <td>
+            <button style='color:red' [style.fontWeight]="isBold ? 'bold':'normal'">My Button</button>
+        </td>
+        <td>
+            <button style='color:red' [style.font-size.px]="fontSize">My Button</button>
+        </td>
+        <td>
+            <button style='color:red' [ngStyle]="addStyles()">My Button</button>
+        </td>
+    </tr>
+
+
+
+
+</table>
